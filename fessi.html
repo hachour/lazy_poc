@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fessi - For the Effortlessly Efficient</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #4f46e5 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(90deg, #4f46e5 0%, #8b5cf6 100%);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .pricing-card:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-sm z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="text-indigo-600 text-3xl">
+                    <!-- Couch SVG Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 11v3a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-3"></path>
+                        <path d="M12 19v-4"></path>
+                        <path d="M6 19v-4"></path>
+                        <path d="M18 19v-4"></path>
+                        <path d="M3 11a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2"></path>
+                        <path d="M4 9V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v2"></path>
+                    </svg>
+                </div>
+                <span class="text-2xl font-bold gradient-text">Fessi</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-10">
+                <a href="#features" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Features</a>
+                <a href="#how-it-works" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">How it Works</a>
+                <a href="#pricing" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Pricing</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Testimonials</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hidden md:inline-block text-gray-600 hover:text-indigo-600 font-medium transition duration-300">Sign In</a>
+                <a href="#" class="gradient-bg text-white font-medium px-5 py-2 rounded-full hover:opacity-90 transition duration-300">Get Started</a>
+                <button class="md:hidden text-gray-600 focus:outline-none">
+                    <!-- Menu SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-4">
+        <div class="container mx-auto flex flex-col-reverse md:flex-row items-center">
+            <div class="md:w-1/2 mt-10 md:mt-0">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    Do Less. <span class="gradient-text">Accomplish More.</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    Fessi is the ultimate solution for people who prefer efficiency over effort. We automate your daily tasks so you can focus on what matters — relaxing.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#" class="gradient-bg text-center text-white font-semibold px-8 py-4 rounded-full hover:opacity-90 transition duration-300">
+                        Start Being Lazy
+                    </a>
+                    <a href="#how-it-works" class="text-center border-2 border-indigo-600 text-indigo-600 font-semibold px-8 py-4 rounded-full hover:bg-indigo-50 transition duration-300">
+                        See How It Works
+                    </a>
+                </div>
+                <div class="mt-8 flex items-center">
+                    <div class="flex -space-x-2">
+                        <img src="/api/placeholder/40/40" class="rounded-full border-2 border-white" alt="User avatar">
+                        <img src="/api/placeholder/40/40" class="rounded-full border-2 border-white" alt="User avatar">
+                        <img src="/api/placeholder/40/40" class="rounded-full border-2 border-white" alt="User avatar">
+                        <img src="/api/placeholder/40/40" class="rounded-full border-2 border-white" alt="User avatar">
+                    </div>
+                    <p class="ml-4 text-gray-600">
+                        Joined by <span class="font-semibold">10,000+</span> lazy people
+                    </p>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="/api/placeholder/500/400" alt="Fessi App" class="rounded-2xl shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Choose Fessi?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We've designed Fessi with one goal in mind: to make your life easier by doing the things you don't want to do.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white rounded-xl p-8 shadow-lg transition duration-300">
+                    <div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mb-6">
+                        <!-- Robot SVG Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+                            <circle cx="12" cy="5" r="2"></circle>
+                            <path d="M12 7v4"></path>
+                            <line x1="8" y1="16" x2="8" y2="16"></line>
+                            <line x1="16" y1="16" x2="16" y2="16"></line>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">AI Task Automation</h3>
+                    <p class="text-gray-600">
+                        Our AI learns your habits and automates repetitive tasks without you lifting a finger.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card bg-white rounded-xl p-8 shadow-lg transition duration-300">
+                    <div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mb-6">
+                        <!-- Lightning SVG Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">One-Click Solutions</h3>
+                    <p class="text-gray-600">
+                        Complex tasks simplified to a single button. Because why do more when you can do less?
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card bg-white rounded-xl p-8 shadow-lg transition duration-300">
+                    <div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mb-6">
+                        <!-- Clock SVG Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Time-Saving Wizards</h3>
+                    <p class="text-gray-600">
+                        Our wizards guide you through tasks in record time, so you can get back to what you enjoy.
+                    </p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card bg-white rounded-xl p-8 shadow-lg transition duration-300">
+                    <div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mb-6">
+                        <!-- Headset SVG Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                            <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">24/7 Lazy Support</h3>
+                    <p class="text-gray-600">
+                        Our support team works hard, so you don't have to. Help is always just a message away.
+                    </p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card bg-white rounded-xl p-8 shadow-lg transition duration-300">
+                    <div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mb-6">
+                        <!-- Puzzle SVG Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19.439 7.85c-.049.322.059.648.289.878l1.568 1.568c.47.47.706 1.087.706 1.704s-.235 1.233-.706 1.704l-1.611 1.611a.98.98 0 0 1-.837.276c-.47-.07-.802-.48-.734-.95l.2-1.355c.041-.28-.05-.568-.246-.765a1.073 1.073 0 0 0-.763-.256H14c-1.1 0-2-.9-2-2v-1c0-.55.45-1 1-1h2.5c.55 0 1-.45 1-1V6.89c0-.316.158-.602.403-.776.245-.175.565-.241.866-.178l1.67.269z"></path>
+                            <path d="M16 16h-3c-1.1 0-2-.9-2-2v-2.5c0-.55-.45-1-1-1h-.39c-.33 0-.63-.16-.81-.43l-.81-1.15c-.17-.24-.26-.53-.26-.82V6.2c0-.35.18-.68.49-.86l1.19-.7c.33-.2.73-.2 1.06 0l1.19.7c.3.18.49.51.49.86V8c0 .55.45 1 1 1h2.5c.55 0 1 .45 1 1v3c0 .55.45 1 1 1H16c.55 0 1 .45 1 1v2.5c0 .55-.45 1-1 1z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Smart Integrations</h3>
+                    <p class="text-gray-600">
+                        Fessi connects seamlessly with your existing tools and services, creating a unified lazy experience.
+                    </p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card bg-white rounded-xl p-8 shadow-lg transition duration-300">
+                    <div class="w-14 h-14 rounded-full gradient-bg flex items-center justify-center mb-6">
+                        <!-- Shield SVG Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Effortless Security</h3>
+                    <p class="text-gray-600">
+                        We handle all security measures behind the scenes. Stay protected without the hassle.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">How Fessi Works</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Getting started with Fessi is as easy as 1-2-3. Actually, it's even easier than that.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto rounded-full gradient-bg flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Sign Up</h3>
+                    <p class="text-gray-600">
+                        Create your account in less than 30 seconds. We've removed all unnecessary fields because, well, we know you're lazy.
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto rounded-full gradient-bg flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Tell Us What You Hate Doing</h3>
+                    <p class="text-gray-600">
+                        Select the tasks you find tedious or boring. Our AI will learn your preferences and start automating right away.
+                    </p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="w-20 h-20 mx-auto rounded-full gradient-bg flex items-center justify-center mb-6">
+                        <span class="text-white text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Relax &amp; Enjoy</h3>
+                    <p class="text-gray-600">
+                        Sit back as Fessi takes over your tedious tasks. You'll wonder how you ever lived without it.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="#" class="gradient-bg text-white font-semibold px-8 py-4 rounded-full hover:opacity-90 transition duration-300">
+                    Start Your Lazy Journey
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Simple, Lazy-Friendly Pricing</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Choose the plan that matches your level of laziness. No complicated options, just straightforward value.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="pricing-card bg-white rounded-2xl shadow-xl p-8 border-t-4 border-gray-400 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2">Casual Lazy</h3>
+                    <p class="text-gray-600 mb-6">For the occasionally lazy person</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$9</span>
+                        <span class="text-gray-600">/month</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <!-- Check SVG Icon -->
+                            <svg class="text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>5 automated tasks</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Basic AI assistance</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Email & calendar management</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <!-- X SVG Icon -->
+                            <svg class="text-red-400 mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            <span>Smart home integration</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <svg class="text-red-400 mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            <span>Priority support</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block text-center border-2 border-indigo-600 text-indigo-600 font-semibold px-6 py-3 rounded-full hover:bg-indigo-50 transition duration-300">
+                        Get Started
+                    </a>
+                </div>
+                
+                <!-- Pro Plan -->
+                <div class="pricing-card bg-white rounded-2xl shadow-xl p-8 border-t-4 border-indigo-600 transform scale-105 z-10 transition duration-300">
+                    <div class="absolute top-0 right-0 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">
+                        MOST POPULAR
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2">Professional Lazy</h3>
+                    <p class="text-gray-600 mb-6">For the dedicated lazy person</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$19</span>
+                        <span class="text-gray-600">/month</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Unlimited automated tasks</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Advanced AI assistance</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Email & calendar management</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Smart home integration</span>
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <svg class="text-red-400 mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                            <span>Priority support</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="block text-center gradient-bg text-white font-semibold px-6 py-3 rounded-full hover:opacity-90 transition duration-300">
+                        Get Started
+                    </a>
+                </div>
+                
+                <!-- Ultra Plan -->
+                <div class="pricing-card bg-white rounded-2xl shadow-xl p-8 border-t-4 border-purple-600 transition duration-300">
+                    <h3 class="text-2xl font-bold mb-2">Ultra Lazy</h3>
+                    <p class="text-gray-600 mb-6">For the professional lazy person</p>
+                    <div class="mb-6">
+                        <span class="text-4xl font-bold">$39</span>
+                        <span class="text-gray-600">/month</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center">
+                            <svg class="text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Unlimited automated tasks</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Premium AI assistance</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="text-green-500 mr-2" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12">
